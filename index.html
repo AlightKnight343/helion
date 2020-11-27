@@ -13,10 +13,37 @@
 <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
 <script src="https://kit.fontawesome.com/d8a371186e.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 </head>
 <body>
+	<!-- preloader -->
+	<span style="--i:1;"></span>
+	<span style="--i:2;"></span>
+	<span style="--i:3;"></span>
+	<span style="--i:4;"></span>
+	<span style="--i:5;"></span>
+	<span style="--i:6;"></span>
+	<span style="--i:7;"></span>
+	<span style="--i:8;"></span>
+	<span style="--i:9;"></span>
+	<span style="--i:10;"></span>
+	<span style="--i:11;"></span>
+	<span style="--i:12;"></span>
+	<span style="--i:13;"></span>
+	<span style="--i:14;"></span>
+	<span style="--i:15;"></span>
+	<span style="--i:16;"></span>
+	<span style="--i:17;"></span>
+	<span style="--i:18;"></span>
+	<span style="--i:19;"></span>
+	<span style="--i:20;"></span>
 
+
+
+
+
+	<!-- navbar -->
 	<nav class="navbar navbar-expand-lg navbar-sticky">
         <a href="#" class="navbar-brand"><img class="logo" src="images/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +54,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link item left" href="#">Team</a>
+            <a class="nav-link item left" href="team.html">Team</a>
             <a class="nav-link item left" href="#">Events</a>
             <a class="nav-link item left" href="#">About</a>
 
@@ -36,6 +63,8 @@
       </nav>
 
 
+
+	<!-- parallax -->
 	<div class="parallax">
 		<ul class="scene" id="scene">
 			<li class="layer" data-depth=".1"><img src="images/text.png"></li>
@@ -57,5 +86,7 @@
 		var scene = document.getElementById('scene');
 		var parallax = new Parallax(scene);
 	</script>
+
+<script src="index.js"></script>
 </body>
 </html>
