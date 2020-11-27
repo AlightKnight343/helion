@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+	
+}
+
+.scene{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.parallax
+{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background: url(images/bg.jpg);
+	background-attachment: fixed;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+.mixBlnd
+{
+	background-blend-mode: screen;
+}
+
+.navbar{
+	background-color: rgb(10, 10, 10);
+	width: 100%;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color:#21ebff;
+    background-color: black;
+    text-decoration: none;
+
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+}
+
+.nav-link{
+    position: relative;
+}
+
+.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover:before {
+    visibility: visible;
+    height: 3px;
+    background-color:#21ebff ;
+  }
+
+  .navbar-brand{
+      color: white;
+      font-size: 2rem;
+      text-decoration: none;
+  }
+
+.navbar-brand:hover{
+    text-decoration: none;
+    color: white;
+}
+.navbar-nav{
+    padding-left: 63%;
+}
+
+.item{
+    margin-right: 30px !important;
+}
+.left{
+    margin-right: 80px !important;
+}
+
+
+
+.navbar{
+    font-family: 'Roboto Mono', monospace;
+}
