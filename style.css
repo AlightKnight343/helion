@@ -14,6 +14,15 @@
 	border: 0;
 }
 
+.heading{
+    text-align: center;
+    font-size: 8rem;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    padding-top: 10rem;
+}
+
 .parallax
 {
 	width: 100%;
