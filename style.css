@@ -4,7 +4,7 @@
 *{
     padding: 0;
     margin: 0;
-	
+	z-index: 1;
 }
 
 .scene{
@@ -128,26 +128,35 @@ body{
     width: 100%;
     padding-top: 100px;
     padding-bottom: 200px;
+    overflow: hidden;
   }
 
   .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 300px;
-    height: 420px;
+    height: 500px;
     background-color: #000;
+    position: relative;
   }
 
 .swiper-slide .imgBox img{
     width: 100%;
+    position: relative;
+
 }
 
+.imgBox, .imgBox img{
+    height: 300px;
+}
 .swiper-slide .member-details{
     box-sizing: border-box;
     font-size: 20px;
     padding: 20px;
     font-family: 'Montserrat';
     color: #fff;
+    position: relative;
+
 }
 
 .swiper-slide .member-details h3{
@@ -162,3 +171,156 @@ body{
     color: rgb(0, 255, 242);
 }
 
+input,
+.toggle{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    outline: none;
+    z-index: 10;
+}
+
+input{
+    opacity: 0;
+}
+
+.toggle{
+    pointer-events: none;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: 0.5s;
+    text-align: center;
+    line-height: 50px;
+    font-size: 36px;
+    box-shadow: 0 0 0 0px #00eeff;
+}
+
+input:checked ~ .toggle{
+    background-color: #000000;
+    transform: rotate(225deg);
+    color: white;    
+}
+.details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgb(0, 255, 255);
+    transition: 0.5s;
+}
+
+input:checked ~ .details{
+  opacity: 1;    
+}
+
+.details h1{
+    opacity: 0;
+    transition: 0.5s;
+    margin: 5px ;
+}
+
+input:checked ~ .details h1{
+    opacity: 1;    
+    transition-delay: 0.5s;
+  }
+
+.details h3{
+    opacity: 0;
+    transition: 0.5s;
+    color: rgb(41, 41, 41);
+    padding: 3px 10px;
+    line-height: 3rem;
+}
+
+input:checked ~ .details h3{
+    opacity: 1;    
+    transition-delay: 0.5s;
+}
+
+.written-part{
+    font-family: 'Montserrat';
+}
+
+
+/* about */
+.btn{
+    position: relative;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin: 40px 15px;
+    color: #21ebff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    overflow: hidden;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+}
+
+.buttons{
+    padding: 2rem 24vw;
+    padding-right: 0;
+}
+
+.buttons:nth-child(1){
+    filter: hue-rotate(115deg);
+}
+.buttons:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+
+.btn:hover{
+    background-color:#21ebff ;
+    color: #111;
+    box-shadow: 0 0 50px #21ebff;
+    transition-delay: 0.25s;
+}
+
+.btn:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #21ebff;
+    border-left: 2px solid #21ebff;
+    transition: 0.5s;
+}
+
+.btn:hover:before{
+    width: 100%;
+    height: 100%;
+}
+
+.btn:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right:  0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #21ebff;
+    border-right: 2px solid #21ebff;
+    transition: 0.5s;
+}
+.btn:hover:after{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    font-family: 'Montserrat';
+    font-size: 5rem;
+    margin: 2rem 0 2rem 32vw;
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 1rem 40vw; 
+}
