@@ -26,7 +26,7 @@
 .parallax
 {
 	width: 100%;
-	height: 100vh;
+	height: 150vh;
 	overflow: hidden;
 	background: url(images/bg.jpg);
 	background-attachment: fixed;
@@ -39,10 +39,6 @@
 	background-blend-mode: screen;
 }
 
-.navbar{
-	background-color: rgb(10, 10, 10);
-	width: 100%;
-}
 
 .nav-link{
     color: white;
@@ -51,7 +47,6 @@
 
 .nav-link:hover{
     color:#21ebff;
-    background-color: black;
     text-decoration: none;
 
 }
@@ -108,6 +103,7 @@
 
 .navbar{
     font-family: 'Roboto Mono', monospace;
+    background-color: transparent;
 }
 
 
@@ -120,9 +116,7 @@
     overflow: hidden;
 }
 
-body{
-    background-color: #111;
-}
+
 
 .swiper-container {
     width: 100%;
@@ -262,7 +256,7 @@ input:checked ~ .details h3{
 }
 
 .buttons{
-    padding: 2rem 24vw;
+    padding: 3rem 35vw;
     padding-right: 0;
 }
 
@@ -323,4 +317,19 @@ footer{
     background-color: black;
     color: white;
     padding: 1rem 40vw; 
+}
+
+.landing-header{
+    padding-top: 15rem;
+}
+
+.new-landing-header{
+    font-size: 7rem;
+    color: rgb(214, 214, 214);
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-left: 30vw;
+    padding-right: 0px;
 }

@@ -17,65 +17,51 @@
 
 </head>
 <body>
-	<!-- preloader -->
-	<span style="--i:1;"></span>
-	<span style="--i:2;"></span>
-	<span style="--i:3;"></span>
-	<span style="--i:4;"></span>
-	<span style="--i:5;"></span>
-	<span style="--i:6;"></span>
-	<span style="--i:7;"></span>
-	<span style="--i:8;"></span>
-	<span style="--i:9;"></span>
-	<span style="--i:10;"></span>
-	<span style="--i:11;"></span>
-	<span style="--i:12;"></span>
-	<span style="--i:13;"></span>
-	<span style="--i:14;"></span>
-	<span style="--i:15;"></span>
-	<span style="--i:16;"></span>
-	<span style="--i:17;"></span>
-	<span style="--i:18;"></span>
-	<span style="--i:19;"></span>
-	<span style="--i:20;"></span>
 
-
-
-
-
-	<!-- navbar -->
-	<nav class="navbar navbar-expand-lg navbar-sticky">
-        <a href="#" class="navbar-brand"><img class="logo" src="images/logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon navbar-light">
-            <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
-          </span>
-
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link item left" href="team.html">Team</a>
-            <a class="nav-link item left" href="#">Events</a>
-            <a class="nav-link item left" href="about.html">About</a>
-
-          </div>
-        </div>
-      </nav>
 
 
 
 	<!-- parallax -->
 	<div class="parallax">
+		<nav class="navbar navbar-expand-lg ">
+			<a href="#" class="navbar-brand"><img class="logo" src="images/logo.png" alt=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon">
+				<i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+			  </span>
+	
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			  <div class="navbar-nav">
+				<a class="nav-link item left" href="team.html">Team</a>
+				<a class="nav-link item left" href="#">Events</a>
+				<a class="nav-link item left" href="#">About</a>
+	
+			  </div>
+			</div>
+		  </nav>
+
 		<ul class="scene" id="scene">
-			<li class="layer" data-depth="-0.25"><img src="images/text.png"></li>
+			<h1 class="landing-header">.</h1>
 			<li class="layer" data-depth="1"><img src="images/planet1.png"></li>
-			<li class="layer" data-depth="-1"><img src="images/planet2.png"></li>
-			<li class="layer" data-depth="2"><img src="images/astronaut.png"></li>
-			<li class="layer" data-depth="0.5"><img src="images/rocket.png"></li>
+			<li class="layer" data-depth="-0.3"><img src="images/planet2.png"></li>
+			<li class="layer" data-depth="0.7"><img src="images/astronaut.png"></li>
+			<li class="layer" data-depth="-0.4"><img src="images/rocket.png"></li>
 		</ul>
 	</div>
 
 
+
+	<div class="about">
+		<h1>CYGNA</h1>
+		<h3>The space society of AISG-46</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptatibus, quaerat optio expedita vel illum tempora labore consectetur porro quo maxime autem dolores perferendis id et quidem. Numquam, aliquam iure!</p>
+
+	</div>
+	<div class="buttons">
+		<a href="#" class="btn">Contact</a>
+		<a href="https://discord.gg/3gnXukvf72" class="btn">Discord</a>
+	</div>
 
 
 
@@ -93,6 +79,12 @@
 	</footer>
 
 
-<script src="index.js"></script>
-</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js" integrity="sha512-2LEOQqARBlk67mYfoWcJah3Rt1Tan5TYsWUNBPtviIk206eyqQpUSpuBK5S77UFu3Pm+zlJOdw8uP5UfO/AtPw==" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js" integrity="sha512-m/n857VfrPYUcRvzCfqfrC9aMT06TQA2V0DcX/Ovovrhswa3038FfYmHlB0l/ZMukVyKWmiwZI4Pnnd7v3FwFQ==" crossorigin="anonymous"></script>
+	<script src="index.js"></script>
+	</body>
 </html>
